@@ -10,10 +10,4 @@ Bootstrap => https://getbootstrap.com/docs/5.0/getting-started/download/
 
 JQuery and Ajax => https://jquery.com/download/
 
-<hr />
-<h3>&#128270; Preview </h3>  
-<p> Result:  </p>
-<br>
-https://karinafukuda.github.io/int-jquery-ajax-main/
-<br>
-<h3>End &#127811;</h3>
+
