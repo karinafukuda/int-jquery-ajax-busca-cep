@@ -7,6 +7,7 @@ For this mini-project I used:
  - Javascript 
  - HTML
  - CSS
+ - Bootstrap
  - Access public API:  <ViaCep> => https://viacep.com.br/ws/ for requisition.
 
 I preferred to use CDN in this mini-project instead of downloading bootstrap and JQuery / Ajax. But you can download and save the file to your project by:
