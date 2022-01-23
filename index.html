@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consultar CEP</title>
+
+  <!--Ajax & JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </style>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+<header>
+ <h1 > Consulta de endereço por CEP</h1>
+</header>
+
+ <main>
+  <section>
+   <div class="container-form sm-sm">
+    <form class="">
+     <input id="cep" class="barra " type="text" placeholder="Digite o cep sem traço" aria-label="Buscar" />
+     <button class="btn btn-success" type="button" onclick="consultaCep()"
+      title="Digite o CEP e clique em Buscar">Buscar </button>
+     <button class="btn btn-secondary " type="submit">Nova consulta</button>
+    </form>
+   </div> 
+  </section>
+
+  <section class="anime" id="box-form">
+   <div class="container bg-light shadow p-3 mb-5 bg-body rounded mt-4">
+    <ul class="list-group list-group-flush">
+      <label class="fw-bolder">Logradouro: </label>
+       <li class="list-group-item" id="logradouro"></li> <br />
+      <label class="fw-bolder">Bairro: </label>
+       <li class="list-group-item" id="bairro"></li><br />
+      <label class="fw-bolder">Cidade: </label>
+       <li class="list-group-item" id="localidade"></li><br />
+      <label class="fw-bolder">UF: </label>
+        <li class="list-group-item p-1" id="uf"></li><br />
+      </ul>
+    </div>
+  </section>
+ </main>
+    <footer>
+        <p>
+          <small>Esse programa foi desenvolvido para estudos de <strong>Ajax e JQuery.</strong><br/> &copy; Karina Fukuda 2021</small>
+        </p>
+    </footer>
+        <!--JavaScript-->
+        <script  src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <script  type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>

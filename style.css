@@ -1,0 +1,64 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  padding: 0.5em;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+}
+
+.container-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.container-form input {
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 3px;
+  align-items: center;
+  min-width: 300px;
+}
+
+#box-form {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 0.3em;
+  color: hsl(217, 14%, 31%);
+}
+
+.anime {
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
+  transition: 0.5s;
+}
+
+.anime-start {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 535px) {
+  .container-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-form button {
+    margin-top: 3px;
+  }
+}
