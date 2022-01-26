@@ -5,11 +5,11 @@ function consultaCep() {
     url: url,
     type: 'GET',
     success: function (response) {
-      console.log(response);
       $('#logradouro').html(response.logradouro);
-      document.getElementById('bairro').innerHTML = response.bairro;
-      document.getElementById('localidade').innerHTML = response.localidade;
-      document.getElementById('uf').innerHTML = response.uf;
+      $('#bairro').html(response.bairro);
+      $('#localidade').html(response.localidade);
+      $('#uf').html(response.uf);
+      // document.getElementById('bairro').innerHTML = response.bairro;
     },
     error: function (jqXHR, textStatus, errorThrown) {
       var textStatus = 'Erro ao buscar este CEP';
